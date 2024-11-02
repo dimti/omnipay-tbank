@@ -1,0 +1,41 @@
+{
+  "name": "dimti/omnipay-tbank",
+  "description": "Omnipay driver for T-Bank",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dimti",
+      "email": "demidov@dimti.ru"
+    }
+  ],
+  "keywords": [
+    "tbank",
+    "acquiring",
+    "rest",
+    "api",
+    "payment"
+  ],
+  "require": {
+    "php": "^7.1",
+    "omnipay/common": "v3.0.2",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "omnipay/tests": "^3",
+    "phpunit/phpunit": "^5.7|^6",
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\TBank\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Omnipay\\TBank\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
